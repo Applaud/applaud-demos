@@ -15,6 +15,26 @@
 		1B1641BD157D7CF300038382 /* LPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1641BC157D7CF300038382 /* LPAppDelegate.m */; };
 		1B1641C0157D7CF300038382 /* LPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1641BF157D7CF300038382 /* LPViewController.m */; };
 		1B1641C3157D7CF300038382 /* LPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1641C1157D7CF300038382 /* LPViewController.xib */; };
+		1B1641F2157D7EAB00038382 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1641F0157D7EAB00038382 /* CoreLocation.framework */; };
+		1B1641F3157D7EAB00038382 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1641F1157D7EAB00038382 /* MapKit.framework */; };
+		1B16423B157DB26500038382 /* GooglePlacesConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16420A157DB26500038382 /* GooglePlacesConnection.m */; };
+		1B16423C157DB26500038382 /* GooglePlacesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16420C157DB26500038382 /* GooglePlacesObject.m */; };
+		1B16423D157DB26500038382 /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B164211157DB26500038382 /* GTMNSString+URLArguments.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1B164240157DB26500038382 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B164217157DB26500038382 /* NSObject+SBJson.m */; };
+		1B164241157DB26500038382 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16421A157DB26500038382 /* SBJsonParser.m */; };
+		1B164242157DB26500038382 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16421C157DB26500038382 /* SBJsonStreamParser.m */; };
+		1B164243157DB26500038382 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16421E157DB26500038382 /* SBJsonStreamParserAccumulator.m */; };
+		1B164244157DB26500038382 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B164220157DB26500038382 /* SBJsonStreamParserAdapter.m */; };
+		1B164245157DB26500038382 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B164222157DB26500038382 /* SBJsonStreamParserState.m */; };
+		1B164246157DB26500038382 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B164224157DB26500038382 /* SBJsonStreamWriter.m */; };
+		1B164247157DB26500038382 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B164226157DB26500038382 /* SBJsonStreamWriterAccumulator.m */; };
+		1B164248157DB26500038382 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B164228157DB26500038382 /* SBJsonStreamWriterState.m */; };
+		1B164249157DB26500038382 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16422A157DB26500038382 /* SBJsonTokeniser.m */; };
+		1B16424A157DB26500038382 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16422C157DB26500038382 /* SBJsonUTF8Stream.m */; };
+		1B16424B157DB26500038382 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16422E157DB26500038382 /* SBJsonWriter.m */; };
+		1B164259157E882800038382 /* LPAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B164258157E882800038382 /* LPAnnotation.m */; };
+		1B16425D157E919000038382 /* mylocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B16425B157E919000038382 /* mylocation.png */; };
+		1B16425E157E919000038382 /* mylocation.xcf in Resources */ = {isa = PBXBuildFile; fileRef = 1B16425C157E919000038382 /* mylocation.xcf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +42,54 @@
 		1B1641AC157D7CF300038382 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1B1641AE157D7CF300038382 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1B1641B0157D7CF300038382 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1B1641B4157D7CF300038382 /* LocalPlaces-Info.plist */ = {isa = PBXFileReference; path = "LocalPlaces-Info.plist"; sourceTree = "<group>"; };
+		1B1641B4157D7CF300038382 /* LocalPlaces-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocalPlaces-Info.plist"; sourceTree = "<group>"; };
 		1B1641B6157D7CF300038382 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1B1641B8157D7CF300038382 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1B1641BA157D7CF300038382 /* LocalPlaces-Prefix.pch */ = {isa = PBXFileReference; path = "LocalPlaces-Prefix.pch"; sourceTree = "<group>"; };
-		1B1641BB157D7CF300038382 /* LPAppDelegate.h */ = {isa = PBXFileReference; path = LPAppDelegate.h; sourceTree = "<group>"; };
+		1B1641BA157D7CF300038382 /* LocalPlaces-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocalPlaces-Prefix.pch"; sourceTree = "<group>"; };
+		1B1641BB157D7CF300038382 /* LPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPAppDelegate.h; sourceTree = "<group>"; };
 		1B1641BC157D7CF300038382 /* LPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPAppDelegate.m; sourceTree = "<group>"; };
-		1B1641BE157D7CF300038382 /* LPViewController.h */ = {isa = PBXFileReference; path = LPViewController.h; sourceTree = "<group>"; };
+		1B1641BE157D7CF300038382 /* LPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPViewController.h; sourceTree = "<group>"; };
 		1B1641BF157D7CF300038382 /* LPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPViewController.m; sourceTree = "<group>"; };
 		1B1641C2157D7CF300038382 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LPViewController.xib; sourceTree = "<group>"; };
+		1B1641F0157D7EAB00038382 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1B1641F1157D7EAB00038382 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1B164209157DB26500038382 /* GooglePlacesConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooglePlacesConnection.h; sourceTree = "<group>"; };
+		1B16420A157DB26500038382 /* GooglePlacesConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooglePlacesConnection.m; sourceTree = "<group>"; };
+		1B16420B157DB26500038382 /* GooglePlacesObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooglePlacesObject.h; sourceTree = "<group>"; };
+		1B16420C157DB26500038382 /* GooglePlacesObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooglePlacesObject.m; sourceTree = "<group>"; };
+		1B16420E157DB26500038382 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		1B16420F157DB26500038382 /* GTMGarbageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMGarbageCollection.h; sourceTree = "<group>"; };
+		1B164210157DB26500038382 /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
+		1B164211157DB26500038382 /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
+		1B164216157DB26500038382 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		1B164217157DB26500038382 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		1B164218157DB26500038382 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		1B164219157DB26500038382 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		1B16421A157DB26500038382 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		1B16421B157DB26500038382 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		1B16421C157DB26500038382 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		1B16421D157DB26500038382 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		1B16421E157DB26500038382 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		1B16421F157DB26500038382 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		1B164220157DB26500038382 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		1B164221157DB26500038382 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		1B164222157DB26500038382 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		1B164223157DB26500038382 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		1B164224157DB26500038382 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		1B164225157DB26500038382 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		1B164226157DB26500038382 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		1B164227157DB26500038382 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		1B164228157DB26500038382 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		1B164229157DB26500038382 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		1B16422A157DB26500038382 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		1B16422B157DB26500038382 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		1B16422C157DB26500038382 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		1B16422D157DB26500038382 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		1B16422E157DB26500038382 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		1B164257157E882800038382 /* LPAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPAnnotation.h; sourceTree = "<group>"; };
+		1B164258157E882800038382 /* LPAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPAnnotation.m; sourceTree = "<group>"; };
+		1B16425B157E919000038382 /* mylocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mylocation.png; sourceTree = "<group>"; };
+		1B16425C157E919000038382 /* mylocation.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mylocation.xcf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1641F2157D7EAB00038382 /* CoreLocation.framework in Frameworks */,
+				1B1641F3157D7EAB00038382 /* MapKit.framework in Frameworks */,
 				1B1641AD157D7CF300038382 /* UIKit.framework in Frameworks */,
 				1B1641AF157D7CF300038382 /* Foundation.framework in Frameworks */,
 				1B1641B1157D7CF300038382 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +111,8 @@
 		1B16419D157D7CF300038382 = {
 			isa = PBXGroup;
 			children = (
+				1B1641F0157D7EAB00038382 /* CoreLocation.framework */,
+				1B1641F1157D7EAB00038382 /* MapKit.framework */,
 				1B1641B2157D7CF300038382 /* LocalPlaces */,
 				1B1641AB157D7CF300038382 /* Frameworks */,
 				1B1641A9157D7CF300038382 /* Products */,
@@ -77,10 +140,14 @@
 		1B1641B2157D7CF300038382 /* LocalPlaces */ = {
 			isa = PBXGroup;
 			children = (
+				1B16425A157E919000038382 /* LocationIcons */,
+				1B1641F8157DB26500038382 /* GoogleLocations */,
 				1B1641BB157D7CF300038382 /* LPAppDelegate.h */,
 				1B1641BC157D7CF300038382 /* LPAppDelegate.m */,
 				1B1641BE157D7CF300038382 /* LPViewController.h */,
 				1B1641BF157D7CF300038382 /* LPViewController.m */,
+				1B164257157E882800038382 /* LPAnnotation.h */,
+				1B164258157E882800038382 /* LPAnnotation.m */,
 				1B1641C1157D7CF300038382 /* LPViewController.xib */,
 				1B1641B3157D7CF300038382 /* Supporting Files */,
 			);
@@ -96,6 +163,79 @@
 				1B1641BA157D7CF300038382 /* LocalPlaces-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B1641F8157DB26500038382 /* GoogleLocations */ = {
+			isa = PBXGroup;
+			children = (
+				1B164208157DB26500038382 /* GooglePlaces */,
+				1B16420D157DB26500038382 /* GTM */,
+				1B164215157DB26500038382 /* SBJSON */,
+			);
+			path = GoogleLocations;
+			sourceTree = "<group>";
+		};
+		1B164208157DB26500038382 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				1B164209157DB26500038382 /* GooglePlacesConnection.h */,
+				1B16420A157DB26500038382 /* GooglePlacesConnection.m */,
+				1B16420B157DB26500038382 /* GooglePlacesObject.h */,
+				1B16420C157DB26500038382 /* GooglePlacesObject.m */,
+			);
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		1B16420D157DB26500038382 /* GTM */ = {
+			isa = PBXGroup;
+			children = (
+				1B16420E157DB26500038382 /* GTMDefines.h */,
+				1B16420F157DB26500038382 /* GTMGarbageCollection.h */,
+				1B164210157DB26500038382 /* GTMNSString+URLArguments.h */,
+				1B164211157DB26500038382 /* GTMNSString+URLArguments.m */,
+			);
+			path = GTM;
+			sourceTree = "<group>";
+		};
+		1B164215157DB26500038382 /* SBJSON */ = {
+			isa = PBXGroup;
+			children = (
+				1B164216157DB26500038382 /* NSObject+SBJson.h */,
+				1B164217157DB26500038382 /* NSObject+SBJson.m */,
+				1B164218157DB26500038382 /* SBJson.h */,
+				1B164219157DB26500038382 /* SBJsonParser.h */,
+				1B16421A157DB26500038382 /* SBJsonParser.m */,
+				1B16421B157DB26500038382 /* SBJsonStreamParser.h */,
+				1B16421C157DB26500038382 /* SBJsonStreamParser.m */,
+				1B16421D157DB26500038382 /* SBJsonStreamParserAccumulator.h */,
+				1B16421E157DB26500038382 /* SBJsonStreamParserAccumulator.m */,
+				1B16421F157DB26500038382 /* SBJsonStreamParserAdapter.h */,
+				1B164220157DB26500038382 /* SBJsonStreamParserAdapter.m */,
+				1B164221157DB26500038382 /* SBJsonStreamParserState.h */,
+				1B164222157DB26500038382 /* SBJsonStreamParserState.m */,
+				1B164223157DB26500038382 /* SBJsonStreamWriter.h */,
+				1B164224157DB26500038382 /* SBJsonStreamWriter.m */,
+				1B164225157DB26500038382 /* SBJsonStreamWriterAccumulator.h */,
+				1B164226157DB26500038382 /* SBJsonStreamWriterAccumulator.m */,
+				1B164227157DB26500038382 /* SBJsonStreamWriterState.h */,
+				1B164228157DB26500038382 /* SBJsonStreamWriterState.m */,
+				1B164229157DB26500038382 /* SBJsonTokeniser.h */,
+				1B16422A157DB26500038382 /* SBJsonTokeniser.m */,
+				1B16422B157DB26500038382 /* SBJsonUTF8Stream.h */,
+				1B16422C157DB26500038382 /* SBJsonUTF8Stream.m */,
+				1B16422D157DB26500038382 /* SBJsonWriter.h */,
+				1B16422E157DB26500038382 /* SBJsonWriter.m */,
+			);
+			path = SBJSON;
+			sourceTree = "<group>";
+		};
+		1B16425A157E919000038382 /* LocationIcons */ = {
+			isa = PBXGroup;
+			children = (
+				1B16425B157E919000038382 /* mylocation.png */,
+				1B16425C157E919000038382 /* mylocation.xcf */,
+			);
+			path = LocationIcons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +266,7 @@
 			attributes = {
 				CLASSPREFIX = LP;
 				LastUpgradeCheck = 0430;
-				ORGANIZATIONNAME = "Oberlin College";
+				ORGANIZATIONNAME = "Applaud, Inc";
 			};
 			buildConfigurationList = 1B1641A2157D7CF300038382 /* Build configuration list for PBXProject "LocalPlaces" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -152,6 +292,8 @@
 			files = (
 				1B1641B7157D7CF300038382 /* InfoPlist.strings in Resources */,
 				1B1641C3157D7CF300038382 /* LPViewController.xib in Resources */,
+				1B16425D157E919000038382 /* mylocation.png in Resources */,
+				1B16425E157E919000038382 /* mylocation.xcf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +307,22 @@
 				1B1641B9157D7CF300038382 /* main.m in Sources */,
 				1B1641BD157D7CF300038382 /* LPAppDelegate.m in Sources */,
 				1B1641C0157D7CF300038382 /* LPViewController.m in Sources */,
+				1B16423B157DB26500038382 /* GooglePlacesConnection.m in Sources */,
+				1B16423C157DB26500038382 /* GooglePlacesObject.m in Sources */,
+				1B16423D157DB26500038382 /* GTMNSString+URLArguments.m in Sources */,
+				1B164240157DB26500038382 /* NSObject+SBJson.m in Sources */,
+				1B164241157DB26500038382 /* SBJsonParser.m in Sources */,
+				1B164242157DB26500038382 /* SBJsonStreamParser.m in Sources */,
+				1B164243157DB26500038382 /* SBJsonStreamParserAccumulator.m in Sources */,
+				1B164244157DB26500038382 /* SBJsonStreamParserAdapter.m in Sources */,
+				1B164245157DB26500038382 /* SBJsonStreamParserState.m in Sources */,
+				1B164246157DB26500038382 /* SBJsonStreamWriter.m in Sources */,
+				1B164247157DB26500038382 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				1B164248157DB26500038382 /* SBJsonStreamWriterState.m in Sources */,
+				1B164249157DB26500038382 /* SBJsonTokeniser.m in Sources */,
+				1B16424A157DB26500038382 /* SBJsonUTF8Stream.m in Sources */,
+				1B16424B157DB26500038382 /* SBJsonWriter.m in Sources */,
+				1B164259157E882800038382 /* LPAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +434,7 @@
 				1B1641C8157D7CF300038382 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
