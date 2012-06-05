@@ -171,7 +171,8 @@
     // Point them all out on the map
     for ( GooglePlacesObject *gpo in locationsList ) {
         [worldView addAnnotation:[[LPAnnotation alloc] initWithCoordinate:gpo.coordinate 
-                                                                    title:gpo.name]];
+                                                                    title:gpo.name
+                                                                 subtitle:[gpo.type objectAtIndex:0]]];
     }
 }
 
