@@ -21,10 +21,22 @@
   NSMutableArray *surveys = [[NSMutableArray alloc] init];
   NSURL *url = [NSURL URLWithString:@"http://127.0.0.1:8000/testapp/survey-data"];
   NSURLRequest *request = [NSURLRequest requestWithURL:url];
-  [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *rep, NSData *d, NSError *err) {
+  [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue]
+						 completionHandler:^(NSURLResponse *rep, NSData *d, NSError *err) {
+	  if(err) {
+		NSLog(@"%@", err);
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error getting survey data."
+														message:@""
+													   delegate:nil
+											  cancelButtonTitle:@"OK"
+											  otherButtonTitles:nil];
+		[alert show];
+		return;
+	  }
 	  if(d) {
-		NSMutableArray *allSurveys = [NSJSONSerialization JSONObjectWithData:d options:NSJSONReadingMutableContainers |
-											NSJSONReadingMutableLeaves error:nil];
+		NSMutableArray *allSurveys = [NSJSONSerialization JSONObjectWithData:d
+																	 options:NSJSONReadingMutableContainers | NSJSONReadingMutableLeaves
+																	   error:nil];
 		for(NSMutableArray *item in allSurveys) {
 		  NSString *title = [item objectAtIndex:[item count] - 1];
 		  [item removeLastObject];

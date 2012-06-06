@@ -93,7 +93,7 @@
     }
   }
   if(!shouldSubmit) {
-    UIAlertView *problem = [[UIAlertView alloc] initWithTitle:@"Problem!" message:@"Answer all the questions!" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    UIAlertView *problem = [[UIAlertView alloc] initWithTitle:@"Problem!" message:@"Answer all the questions." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [problem show];
   }
   else {
