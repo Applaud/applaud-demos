@@ -108,6 +108,7 @@
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *err) {
 		if(err) {
 		  UIAlertView *problem = [[UIAlertView alloc] initWithTitle:@"Problem!" message:@"Couldn't send the response." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+      [problem show];
 		}
 		UIAlertView *success = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"All went well." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
 		[success show];
