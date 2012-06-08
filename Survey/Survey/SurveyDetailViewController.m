@@ -93,7 +93,7 @@
     }
   }
   if(!shouldSubmit) {
-    UIAlertView *problem = [[UIAlertView alloc] initWithTitle:@"Problem!" message:@"Answer all the questions." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    UIAlertView *problem = [[UIAlertView alloc] initWithTitle:@"Problem!" message:@"Answer all the questions." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
     [problem show];
   }
   else {
@@ -106,9 +106,12 @@
     [request setHTTPMethod:@"POST"];
     [request setHTTPBody:responseData];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *err) {
-      UIAlertView *success = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"All went well." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-      [success show];
-    }];
+		if(err) {
+		  UIAlertView *problem = [[UIAlertView alloc] initWithTitle:@"Problem!" message:@"Couldn't send the response." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+		}
+		UIAlertView *success = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"All went well." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+		[success show];
+	  }];
   }
 }
 
