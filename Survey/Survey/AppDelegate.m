@@ -19,7 +19,7 @@
   UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
   MasterViewController *masterController = [navController.viewControllers objectAtIndex:0];
   NSMutableArray *surveys = [[NSMutableArray alloc] init];
-  NSURL *url = [NSURL URLWithString:@"http://127.0.0.1:8000/testapp/survey-data"];
+  NSURL *url = [NSURL URLWithString:@"http://weapplaudyou.com/testapp/survey-data"];
   NSURLRequest *request = [NSURLRequest requestWithURL:url];
   [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue]
 						 completionHandler:^(NSURLResponse *rep, NSData *d, NSError *err) {

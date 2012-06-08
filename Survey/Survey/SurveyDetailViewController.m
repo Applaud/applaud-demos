@@ -101,7 +101,7 @@
     [responseDict setObject:self.answers forKey:@"answers"];
     [responseDict setObject:self.survey.title forKey:@"survey"];
     NSData *responseData = [NSJSONSerialization dataWithJSONObject:responseDict options:0 error:nil];
-    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1:8000/testapp/response"];
+    NSURL *url = [NSURL URLWithString:@"http://weapplaudyou.com/testapp/response"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
     [request setHTTPBody:responseData];
